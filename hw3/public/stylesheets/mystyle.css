@@ -1,0 +1,79 @@
+/* Malia Lundstrom HW1 CSS file*/
+body {
+  background-color: pink;
+}
+
+h1 {
+  font-family: papyrus;
+  color: MediumVioletRed;
+  text-align: left;
+  font-size: 50px
+}
+
+.p1 {
+  font-family: papyrus;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+table {
+	background-color:blue;
+}
+
+ul {
+	background-color:yellow;
+   	font-family: "courier new";
+    text-align: center;
+}
+
+h3 {
+  font-family: "courier new";
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+
+/* Created hover dropdown menu REFERENCE: https://www.w3schools.com/howto/howto_css_dropdown.asp */
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.force-scroll {
+
+overflow-y: scroll;
+
+height: 200px;
+
+}

@@ -1,0 +1,92 @@
+<!-- Malia Lundstrom HW1 html file-->
+<!DOCTYPE html>
+<html>
+<!-- Linking the css file -->
+<head>
+<link rel="stylesheet" href="stylesheets/mystyle.css">
+ <script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+<script src="javascripts/orderPlaced.js"> </script>
+<script src="javascripts/monthChanged.js"> </script>
+<style>
+</style>
+</head>
+<body>
+<!-- Added title to page along with picture of cheesecake -->
+	<h1>Cheesecake Order Form</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg" 
+		alt="cheesecake" width="500" height="333">
+        <br>
+    <form action="/action_page.php">
+<!--  Made a table to make sure the quantity and topping are lined up correctly-->
+	<table style="width:40%">
+  		<tr>
+    		<td valign= "top">
+            	<p>Quantity</p>
+				<!-- up to 3 toppings -->
+				<select id = "myList">
+    				<option value = "1">1</option>
+        			<option value = "2">2</option>
+        			<option value = "3">3</option>
+    			</select> 
+			</td>
+    		<td align= "left">
+            	<p>Topping</p>
+				<!-- radio button for selecting type of topping -->
+  				<input type="radio" id="plain" name="Topping" value="Plain">
+  				<label for="plain">Plain</label><br>
+  				<input type="radio" id="cherry" name="Topping" value="Cherry">
+  				<label for="cherry">Cherry</label><br>
+  				<input type="radio" id="chocolate" name="Topping" value="Chocolate">
+  				<label for="chocolate">Chocolate</label>
+  				<br> 
+  			</td> 
+  		</tr>
+	</table>
+    <!-- Area for special instructions -->
+    <p>Notes:</p>
+    <textarea id="instructions" name="instructions" rows="6" cols="50">
+  		Enter any special instructions here.
+  	</textarea>
+    </form>
+    <br>
+    	<!-- Button to submit the order -->
+    <button onclick="orderHasBeenPlaced()">Order</button>
+	<!-- stats on previous orders -->
+   <table style="width:25%">
+  		<tr>
+    		<td valign= "top">
+				<h3 id= "total">Orders for</h3>
+		</td>
+       <td>
+
+<!-- Created dropdown menu REFERENCE:  https://www.w3schools.com/howto/howto_css_dropdown.asp and stack overflow  -->
+<div class="dropdown force-scroll">
+  <button id="drop" class="dropbtn">Jan</button>
+  <div class="dropdown-content">
+    <a onclick="monthChange(this)">Jan</a>
+    <a onclick="monthChange(this)">Feb</a>
+    <a onclick="monthChange(this)">Mar</a>
+   	<a onclick="monthChange(this)">Apr</a>
+    <a onclick="monthChange(this)">May</a>
+    <a onclick="monthChange(this)">Jun</a>
+    <a onclick="monthChange(this)">Jul</a>
+    <a onclick="monthChange(this)">Aug</a>
+    <a onclick="monthChange(this)">Sep</a>
+    <a onclick="monthChange(this)">Oct</a>
+    <a onclick="monthChange(this)">Nov</a>
+   	<a onclick="monthChange(this)">Dec</a>
+  </div>
+</div>
+</td>
+ </tr>
+        </table>
+    <ul>
+  		<li>11 cherry</li>
+ 		<li>17 chocolate</li>
+  		<li>31 plain</li>
+	</ul> 
+
+</body>
+</html>
