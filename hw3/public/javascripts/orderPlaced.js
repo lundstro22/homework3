@@ -1,3 +1,4 @@
+//File created by Malia Lundstrom
 function orderHasBeenPlaced(){
 	var str= document.getElementById("instructions").value;
     var select= document.getElementById("myList");
